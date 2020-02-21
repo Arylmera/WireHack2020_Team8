@@ -34,8 +34,8 @@ export class MapHumanComponent implements AfterViewInit {
       controls: defaultControls().extend([
         new ZoomToExtent({
           extent: [
-            //813079.7791264898, 5929220.284081122,
-            //848966.9639063801, 5936863.986909639
+            813079.7791264898, 5929220.284081122,
+            848966.9639063801, 5936863.986909639
           ]
         })
       ])
