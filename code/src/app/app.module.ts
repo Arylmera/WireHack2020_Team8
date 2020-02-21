@@ -11,17 +11,6 @@ import { CameraDeviceComponent } from './components/camera-device/camera-device.
 
 
 @NgModule({
-<<<<<<< HEAD
-    declarations: [
-        AppComponent,
-        LoginComponent,
-        FormLoginComponent,
-        MapHumanComponent,
-        TchatZombieComponent,
-        CameraDeviceComponent,
-        CameraDeviceComponent
-    ],
-=======
   declarations: [
     AppComponent,
     LoginComponent,
@@ -31,7 +20,6 @@ import { CameraDeviceComponent } from './components/camera-device/camera-device.
     CameraDeviceComponent,
     MapHumanComponent
   ],
->>>>>>> 915f1db7ff3df295ee8ad0c2eaa7d508374c03a8
   imports: [
     BrowserModule
   ],
