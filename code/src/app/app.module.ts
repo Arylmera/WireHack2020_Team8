@@ -6,7 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { MapHumanComponent } from './components/map-human/map-human.component';
 import { TchatZombieComponent } from './components/tchat-zombie/tchat-zombie.component';
-import { CameraDeviceComponent } from './camera-device/camera-device.component';
+import { CameraDeviceComponent } from './components/camera-device/camera-device.component';
 
 @NgModule({
   declarations: [
