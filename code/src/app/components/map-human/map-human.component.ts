@@ -14,8 +14,8 @@ import ZoomToExtent from 'ol/control/ZoomToExtent';
 })
 
 export class MapHumanComponent implements AfterViewInit {
-
   map: Map;
+  barcoCoord = [50.79774056229649,3.276881057572907];
 
   ngAfterViewInit() {
     this.map = new Map({
@@ -28,14 +28,14 @@ export class MapHumanComponent implements AfterViewInit {
         })
       ],
       view: new View({
-        center: [813079.7791264898, 5929220.284081122],
+        center: this.barcoCoord,
         zoom: 7
       }),
       controls: defaultControls().extend([
         new ZoomToExtent({
           extent: [
-            813079.7791264898, 5929220.284081122,
-            848966.9639063801, 5936863.986909639
+            //813079.7791264898, 5929220.284081122,
+            //848966.9639063801, 5936863.986909639
           ]
         })
       ])
