@@ -17,6 +17,6 @@ export class CameraDeviceComponent implements OnInit {
   ngOnInit() {
     this.video = this.videoElement.nativeElement;
   }
-
+  // comment du cul
 
 }
