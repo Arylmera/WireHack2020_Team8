@@ -8,6 +8,8 @@ import { MapHumanComponent } from './components/map-human/map-human.component';
 import { TchatZombieComponent } from './components/tchat-zombie/tchat-zombie.component';
 import { CameraDeviceComponent } from './components/camera-device/camera-device.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,8 @@ import { CameraDeviceComponent } from './components/camera-device/camera-device.
     FormLoginComponent,
     MapHumanComponent,
     TchatZombieComponent,
-    CameraDeviceComponent
+    CameraDeviceComponent,
+    MapHumanComponent
   ],
   imports: [
     BrowserModule
