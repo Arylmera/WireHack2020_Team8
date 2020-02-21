@@ -9,14 +9,15 @@ import { TchatZombieComponent } from './components/tchat-zombie/tchat-zombie.com
 import { CameraDeviceComponent } from './components/camera-device/camera-device.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    FormLoginComponent,
-    MapHumanComponent,
-    TchatZombieComponent,
-    CameraDeviceComponent
-  ],
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        FormLoginComponent,
+        MapHumanComponent,
+        TchatZombieComponent,
+        CameraDeviceComponent,
+        CameraDeviceComponent
+    ],
   imports: [
     BrowserModule
   ],

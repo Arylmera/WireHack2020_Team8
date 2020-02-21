@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ViewChild } from '@angular/core';
+import { ViewChild, ViewChildren, Component} from '@angular/core';
 
 // @ts-ignore
 @Component({
@@ -7,16 +6,31 @@ import { ViewChild } from '@angular/core';
   templateUrl: './camera-device.component.html',
   styleUrls: ['./camera-device.component.css']
 })
-export class CameraDeviceComponent implements OnInit {
+export class CameraDeviceComponent {
 
-  @ViewChild('videoElement') videoElement: any;
-  video: any;
+  @ViewChild('hardwareVideo') hardwareVideo: any;
 
   constructor() { }
 
-  ngOnInit() {
-    this.video = this.videoElement.nativeElement;
+  videoStart() {
+    const video = this.hardwareVideo.nativeElement;
+
+    const n = navigator as any;
+
+    n.getUserMedia = ( n.getUserMedia || n.webkitGetUserMedia || n.mozGetUserMedia  || n.msGetUserMedia );
+
+    // tslint:disable-next-line:only-arrow-functions
+    n.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+      video.src = window.URL.createObjectURL(stream);
+      video.play();
+    });
+
+    // NOTE: For Video + Audio
+    // n.mediaDevices.getUserMedia({video: true, audio: true}).then(function(stream) {
+    //     video.src = window.URL.createObjectURL(stream);
+    //     video.play();
+    // });
+
   }
-  // comment du cul
 
 }
