@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {query} from "@angular/animations";
 
 @Component({
   selector: 'app-form-login',
@@ -11,8 +10,10 @@ export class FormLoginComponent {
 
   constructor() { }
 
-  load() {
-    location.pathname = '../dashboard/dashboard.component.html';
+  hide() {
+    let form = document.getElementById('form');
+    form.hidden = true;
+    return false;
   }
 
 }

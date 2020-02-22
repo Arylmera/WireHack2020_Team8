@@ -1,18 +1,30 @@
-#up {
-  height : 50%;
-  text-align: center;
-  font-size : 2em;
-  font-family: SemiBold, sans-serif;
+div {
+
+  width: 10em;
+  height: 10em;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
 }
 
-#down {
-  height : 50%;
-  text-align: center;
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-a {
-  height : 15%;
-  width : 25%;
-  font-size : 100%;
-  text-align : center;
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
