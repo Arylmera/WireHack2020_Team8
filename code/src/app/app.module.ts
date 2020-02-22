@@ -20,6 +20,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {Routes} from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { QuestComponent } from './components/quest/quest.component';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     CameraDeviceComponent,
     MapHumanComponent,
     DashboardComponent,
+    QuestComponent,
   ],
   imports: [
     BrowserModule,
