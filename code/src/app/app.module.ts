@@ -53,12 +53,9 @@ const routes: Routes = [
     LayoutModule,
     MatFormFieldModule,
     MatInputModule,
-<<<<<<< HEAD
-    FormsModule
-=======
+    FormsModule,
     RouterModule,
     RouterModule.forRoot(routes)
->>>>>>> 437d7fcc5d37a8fda83d98a534a6fd7f88b95109
   ],
   providers: [],
   bootstrap: [AppComponent]
