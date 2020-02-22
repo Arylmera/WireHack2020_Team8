@@ -21,6 +21,7 @@ import {Routes} from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { QuestComponent } from './components/quest/quest.component';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
     MatIconModule,
     LayoutModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
