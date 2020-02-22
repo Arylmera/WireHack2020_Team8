@@ -17,10 +17,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
-import {Route} from '@angular/router';
+import {Routes} from '@angular/router';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
-const appRoutes: Route = [
-  {path: 'login', component: LoginComponent}
+const appRoutes: Routes = [
+  {path: 'login', component: LoginComponent},
+  {path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
@@ -40,16 +43,14 @@ const appRoutes: Route = [
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-<<<<<<< HEAD
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule
-=======
+    LayoutModule,
+    MatFormFieldModule,
     MatInputModule
->>>>>>> 45fbaf7559efa1f4f484a5f59669e5601f469699
   ],
   providers: [],
   bootstrap: [AppComponent]
