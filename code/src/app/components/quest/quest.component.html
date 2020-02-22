@@ -1,33 +1,47 @@
 <div id="all">
 
-  <form>
-    <label>Question</label>
+  <span id="test">
+    <form>
+      <label id="question">Question</label>
 
-    <table>
+      <table>
 
-      <tr>
+        <tr>
 
-        <td>
-          <button mat-raised-button (click)="ansA()">a</button>
-        </td>
+          <td>
+            <button mat-raised-button (click)="ansA()" id="buttonA">a</button>
+          </td>
 
-        <td>
-          <button mat-raised-button (click)="ansB()">b</button>
-        </td>
+          <td>
+            <button mat-raised-button (click)="ansB()" id="buttonB">b</button>
+          </td>
 
-      </tr>
+        </tr>
 
-      <tr>
-        <td>
-          <button mat-raised-button (click)="ansC()">c</button>
-        </td>
-        <td>
-          <button mat-raised-button (click)="ansD()">d</button>
-        </td>
-      </tr>
+        <tr>
+          <td>
+            <button mat-raised-button (click)="ansC()" id="buttonC">c</button>
+          </td>
+          <td>
+            <button mat-raised-button (click)="ansD()" id="buttonD">d</button>
+          </td>
+        </tr>
 
-    </table>
+      </table>
 
-  </form>
+    </form>
+  </span>
+
+  <span id="goodResults" hidden="true">
+    <a mat-raised-button>
+      See your results!
+    <a>
+  </span>
+
+  <span id="badResults" hidden="true">
+    <a mat-raised-button>
+      See your results!
+    </a>
+  </span>
 
 </div>

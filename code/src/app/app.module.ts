@@ -17,14 +17,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
-import {Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { QuestComponent } from './components/quest/quest.component';
 
-const appRoutes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent}
+const routes: Routes = [
+  {path: 'quest', component: QuestComponent}
 ];
 
 @NgModule({
@@ -52,7 +51,9 @@ const appRoutes: Routes = [
     MatIconModule,
     LayoutModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    RouterModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

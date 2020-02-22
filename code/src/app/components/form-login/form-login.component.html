@@ -1,6 +1,13 @@
 <div id ="all">
+  <form id="form">
 
-    Welcome to ZombieSpot! <br>
-    <button mat-raised-button (click)="load()" id="bouton" > Start the test! </button>
+    <label>
+      Welcome to ZombieSpot! <br>
+    </label>
 
+    <a mat-raised-button routerLink="/quest" (click)="hide()">
+      Start the test!
+    </a>
+
+  </form>
 </div>
