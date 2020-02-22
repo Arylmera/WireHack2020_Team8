@@ -12,6 +12,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatButtonModule} from "@angular/material/button";
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 
@@ -24,6 +30,7 @@ import {MatButtonModule} from "@angular/material/button";
     TchatZombieComponent,
     CameraDeviceComponent,
     MapHumanComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,12 @@ import {MatButtonModule} from "@angular/material/button";
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
