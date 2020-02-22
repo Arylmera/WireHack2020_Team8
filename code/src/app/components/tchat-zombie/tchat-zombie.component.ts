@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TchatZombieComponent implements OnInit {
 
+  value = 'clear me';
   messageList: string[] = [''];
 
   constructor() { }
