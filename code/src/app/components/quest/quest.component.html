@@ -2,48 +2,36 @@
 
 <div id="all">
 
-  <span id="test">
-    <form>
-      <label id="question"></label>
-
-      <table>
-
-        <tr>
-
-          <td>
-            <button mat-raised-button (click)="ansA()" id="buttonA">a</button>
-          </td>
-
-          <td>
-            <button mat-raised-button (click)="ansB()" id="buttonB">b</button>
-          </td>
-
-        </tr>
-
-        <tr>
-          <td>
-            <button mat-raised-button (click)="ansC()" id="buttonC">c</button>
-          </td>
-          <td>
-            <button mat-raised-button (click)="ansD()" id="buttonD">d</button>
-          </td>
-        </tr>
-
-      </table>
-
-    </form>
-  </span>
-
-  <span id="goodResults" hidden="true">
-    <a mat-raised-button routerLink="/map">
-      See your results!
-    </a>
-  </span>
-
-  <span id="badResults" hidden="true">
-    <a mat-raised-button routerLink="/chat">
-      See your results!
-    </a>
-  </span>
+  <div class="container" id="test">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="question" style="color:white;margin-top:1em;text-align:center;"></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6"><button mat-raised-button (click)="ansA()" id="buttonA">a</button></div>
+      <div class="col-sm-6"><button mat-raised-button (click)="ansB()" id="buttonB">b</button></div>
+      <div class="col-sm-6"><button mat-raised-button (click)="ansC()" id="buttonC">c</button></div>
+      <div class="col-sm-6"><button mat-raised-button (click)="ansD()" id="buttonD">d</button></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6" id="goodResults" hidden="true">
+        <button mat-raised-button routerLink="/map">
+          See your results!
+        </button>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6" id="badResults" hidden="true">
+        <button mat-raised-button routerLink="/chat">
+          See your results!
+        </button>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
 
 </div>

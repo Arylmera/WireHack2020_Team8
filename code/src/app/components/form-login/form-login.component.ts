@@ -11,7 +11,7 @@ export class FormLoginComponent {
   constructor() { }
 
   hide() {
-    let form = document.getElementById('form');
+    let form = document.getElementById('start');
     form.hidden = true;
     return false;
   }

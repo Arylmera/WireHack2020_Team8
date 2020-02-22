@@ -23,6 +23,7 @@ import {MatInputModule} from '@angular/material/input';
 import { QuestComponent } from './components/quest/quest.component';
 import {FormsModule} from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MessengerComponent} from './components/messenger/messenger.component';
 
 const routes: Routes = [
   {path: 'quest', component: QuestComponent},
@@ -31,17 +32,18 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    FormLoginComponent,
-    MapHumanComponent,
-    TchatZombieComponent,
-    CameraDeviceComponent,
-    MapHumanComponent,
-    DashboardComponent,
-    QuestComponent,
-  ],
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        FormLoginComponent,
+        MapHumanComponent,
+        TchatZombieComponent,
+        CameraDeviceComponent,
+        MapHumanComponent,
+        DashboardComponent,
+        QuestComponent,
+        MessengerComponent,
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
