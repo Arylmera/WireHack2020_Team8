@@ -1,1 +1,12 @@
-<p>tchat-zombie works!</p>
+
+<div class="tchat">
+  <p *ngFor="let message of messageList">{{message}}</p>
+</div>
+
+<form id="formText">
+  <mat-form-field appearance="fill">
+    <mat-label>Say where you go to your friends !</mat-label>
+    <textarea matInput placeholder="Where do you go ?"  #textArea ></textarea>
+    <button class="mat-flat-button" (click)="sendMessage(textArea.value)">Send</button>
+  </mat-form-field>
+</form>

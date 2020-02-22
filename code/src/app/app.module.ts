@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+<<<<<<< HEAD
 import {MatButtonModule} from "@angular/material/button";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -19,7 +20,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 
+=======
+import {MatInputModule} from '@angular/material/input';
+import {Route} from '@angular/router';
+>>>>>>> 45fbaf7559efa1f4f484a5f59669e5601f469699
 
+const appRoutes: Route = [
+  {path: 'login', component: LoginComponent}
+];
 
 @NgModule({
   declarations: [
@@ -38,12 +46,16 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+<<<<<<< HEAD
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
     MatIconModule,
     LayoutModule
+=======
+    MatInputModule
+>>>>>>> 45fbaf7559efa1f4f484a5f59669e5601f469699
   ],
   providers: [],
   bootstrap: [AppComponent]

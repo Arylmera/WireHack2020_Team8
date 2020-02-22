@@ -11,9 +11,8 @@ export class FormLoginComponent {
 
   constructor() { }
 
-  click() {
-    const but = document.getElementById('bouton');
-    but.innerHTML = 'Click reussi!';
+  load() {
+    location.pathname = '../dashboard/dashboard.component.html';
   }
 
 }
