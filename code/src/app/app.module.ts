@@ -8,10 +8,10 @@ import { MapHumanComponent } from './components/map-human/map-human.component';
 import { TchatZombieComponent } from './components/tchat-zombie/tchat-zombie.component';
 import { CameraDeviceComponent } from './components/camera-device/camera-device.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TableComponent } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -24,14 +24,14 @@ import { MatSortModule } from '@angular/material/sort';
     TchatZombieComponent,
     CameraDeviceComponent,
     MapHumanComponent,
-    TableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

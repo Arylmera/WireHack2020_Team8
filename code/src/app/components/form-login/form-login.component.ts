@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {query} from "@angular/animations";
 
 @Component({
   selector: 'app-form-login',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-login.component.css']
 })
 
-export class FormLoginComponent implements OnInit {
+export class FormLoginComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
+  click() {
+    const but = document.getElementById('bouton');
+    but.innerHTML = 'Click reussi!';
   }
 
 }
