@@ -1,27 +1,21 @@
-#tchat {
-  width: 65%;
-  min-height: 30em;
+div {
+
+  width: 50%;
   height: 50%;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  display : inline-block;
   text-align: center;
-  background-color: lightgray;
-  overflow: auto;
 
 }
 
-.message {
-  float: left;
-  clear: left;
-}
-
-.message:nth-child(2n){
-  float: right;
-  clear: right;
-}
-
-mat-form-field {
-  position:fixed;
-  bottom:0px;
-  width: 100%;
-  min-height: 3em;
-  height: auto;
+p {
+  font-size : 2em;
 }

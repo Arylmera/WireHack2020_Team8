@@ -22,9 +22,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { QuestComponent } from './components/quest/quest.component';
 import {FormsModule} from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
-  {path: 'quest', component: QuestComponent}
+  {path: 'quest', component: QuestComponent},
+  {path: 'map', component: MapHumanComponent},
+  {path: 'chat', component: TchatZombieComponent}
 ];
 
 @NgModule({
@@ -55,7 +58,8 @@ const routes: Routes = [
     MatInputModule,
     FormsModule,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
