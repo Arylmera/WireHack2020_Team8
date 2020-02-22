@@ -21,6 +21,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { QuestComponent } from './components/quest/quest.component';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {path: 'quest', component: QuestComponent}
@@ -52,6 +53,7 @@ const routes: Routes = [
     LayoutModule,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
     RouterModule,
     RouterModule.forRoot(routes)
   ],

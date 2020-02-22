@@ -8,6 +8,7 @@ import XYZ from 'ol/source/XYZ';
 import Geolocation from 'ol/Geolocation';
 import * as olProj from 'ol/proj';
 
+
 @Component({
   selector: 'app-map-human',
   templateUrl: './map-human.component.html',
@@ -16,8 +17,7 @@ import * as olProj from 'ol/proj';
 
 export class MapHumanComponent implements AfterViewInit {
   map: Map;
-  // barco = [2.88626, 58.85039];
-  barco = [2.88626, 58.85039];
+  // barco = [50.798807, 3.276523]
 
   ngAfterViewInit() {
     this.map = new Map({
@@ -30,12 +30,11 @@ export class MapHumanComponent implements AfterViewInit {
         })
       ],
       view: new View({
-        center: this.barco,
-        zoom: 15,
+        center: olProj.transform([3.276523, 50.798807], 'EPSG:4326', 'EPSG:3857'),
+        zoom: 7,
         projection: 'EPSG:3857'
       }),
     });
-
     const geolocation = new Geolocation();
     geolocation.setTracking(true);
     // tslint:disable-next-line:only-arrow-functions
