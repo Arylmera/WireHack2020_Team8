@@ -11,7 +11,8 @@ export class CameraDeviceComponent implements OnInit {
 
   constructor() { }
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
+
     const video = this.hardwareVideo.nativeElement;
 
     const n = navigator as any;
