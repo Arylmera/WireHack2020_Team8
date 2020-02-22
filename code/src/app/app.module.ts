@@ -8,13 +8,15 @@ import { MapHumanComponent } from './components/map-human/map-human.component';
 import { TchatZombieComponent } from './components/tchat-zombie/tchat-zombie.component';
 import { CameraDeviceComponent } from './components/camera-device/camera-device.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TableComponent } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
+import {Route} from '@angular/router';
 
-
+const appRoutes: Route = [
+  {path: 'login', component: LoginComponent}
+]
 
 @NgModule({
   declarations: [
@@ -25,7 +27,6 @@ import {MatInputModule} from '@angular/material/input';
     TchatZombieComponent,
     CameraDeviceComponent,
     MapHumanComponent,
-    TableComponent
   ],
   imports: [
     BrowserModule,
