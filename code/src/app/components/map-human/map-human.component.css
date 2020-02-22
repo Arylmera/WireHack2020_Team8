@@ -1,7 +1,6 @@
-div {
-
-  width: 40em;
-  height: 40em;
+#map{
+  width: 50%;
+  height: 50em;
 
   position: absolute;
   top:0;
@@ -10,8 +9,4 @@ div {
   right: 0;
 
   margin: auto;
-
-  border: darkgreen;
-  border-style: solid;
-
 }

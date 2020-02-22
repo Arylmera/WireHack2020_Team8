@@ -31,7 +31,7 @@ export class MapHumanComponent implements AfterViewInit {
       ],
       view: new View({
         center: olProj.transform([3.276523, 50.798807], 'EPSG:4326', 'EPSG:3857'),
-        zoom: 7,
+        zoom: 16,
         projection: 'EPSG:3857'
       }),
     });
