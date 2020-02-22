@@ -16,7 +16,7 @@ import {Route} from '@angular/router';
 
 const appRoutes: Route = [
   {path: 'login', component: LoginComponent}
-]
+];
 
 @NgModule({
   declarations: [
