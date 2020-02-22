@@ -1,15 +1,16 @@
 
-<div>
-  <div class="tchat">
-    <p *ngFor="let message of messageList">{{message}}</p>
+  <div id="tchat">
+    <p class="message" *ngFor="let message of messageList">{{message}}</p>
   </div>
 
   <form id="formText">
     <mat-form-field appearance="fill">
       <mat-label>Say where you go to your friends !</mat-label>
-      <textarea matInput placeholder="Where do you go ?"  #textArea ></textarea>
+      <input matInput placeholder="Where do you go ?"  #textArea [(ngModel)]="value">
+      <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
       <button class="mat-flat-button" (click)="sendMessage(textArea.value)">Send</button>
     </mat-form-field>
   </form>
-</div>
 

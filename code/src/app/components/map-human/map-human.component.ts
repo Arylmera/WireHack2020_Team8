@@ -1,11 +1,12 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
-import { defaults as defaultControls } from 'ol/control';
 
+
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
-import ZoomToExtent from 'ol/control/ZoomToExtent';
+import Geolocation from 'ol/Geolocation';
+import * as olProj from 'ol/proj';
 
 @Component({
   selector: 'app-map-human',
@@ -15,7 +16,9 @@ import ZoomToExtent from 'ol/control/ZoomToExtent';
 
 export class MapHumanComponent implements AfterViewInit {
   map: Map;
-  barco = [50.79774056229649, 3.276881057572907];
+  // barco = [2.88626, 58.85039];
+  barco = [2.88626, 58.85039];
+
   ngAfterViewInit() {
     this.map = new Map({
       target: 'map',
@@ -28,16 +31,17 @@ export class MapHumanComponent implements AfterViewInit {
       ],
       view: new View({
         center: this.barco,
-        zoom: 15
+        zoom: 15,
+        projection: 'EPSG:3857'
       }),
-      controls: defaultControls().extend([
-        new ZoomToExtent({
-          extent: [
-            50.79774056229649, 3.276881057572907,
-            50.79774056229649, 3.2768810575729079
-          ]
-        })
-      ])
+    });
+
+    const geolocation = new Geolocation();
+    geolocation.setTracking(true);
+    // tslint:disable-next-line:only-arrow-functions
+    geolocation.on('change:position', function() {
+      console.log(geolocation.getPosition());
+      this.map.getView().setCenter(olProj.transform(geolocation.getPosition(), 'EPSG:4326', 'EPSG:3857'));
     });
   }
 }
