@@ -5,11 +5,28 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './quest.component.html',
   styleUrls: ['./quest.component.css']
 })
+
 export class QuestComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  ansA() {
+  }
+
+  ansB() {
+
+  }
+
+  ansC() {
+
+  }
+
+  ansD() {
+
   }
 
 }
